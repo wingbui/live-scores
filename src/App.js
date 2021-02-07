@@ -1,14 +1,14 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './GlobalStyles';
-import Home from './pages/Home';
-import Button from './components/ui/Buttons'
+import Scores from './pages/scores/Scores'
+import Button from './components/ui/Buttons';
 import { brightTheme, darkTheme } from './utils/themes';
-import {WHITE, GRAY_900} from './utils/constants'
+import { WHITE, GRAY_900 } from './utils/constants';
 
 function App() {
   const [currentTheme, setCurrentTheme] = React.useState(brightTheme);
-  const {toggleLabel, themeName} = currentTheme;
+  const { toggleLabel, themeName } = currentTheme;
 
   const toggleTheme = () => {
     if (themeName === 'bright') {
@@ -21,10 +21,10 @@ function App() {
   return (
     <ThemeProvider theme={currentTheme}>
       <GlobalStyles />
-        <Home />
-        <Button bg={currentTheme.text} onClick={toggleTheme} color={themeName === 'bright' ? WHITE: GRAY_900}>
-            {toggleLabel.toUpperCase()}
-        </Button>
+      <Scores />
+      <Button bg={currentTheme.text} onClick={toggleTheme} color={themeName === 'bright' ? WHITE : GRAY_900}>
+        {toggleLabel.toUpperCase()}
+      </Button>
     </ThemeProvider>
   );
 }
