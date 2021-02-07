@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './GlobalStyles';
 import Scores from './pages/scores/Scores'
-import Button from './components/ui/Buttons';
+import Button from './components/Buttons';
 import { brightTheme, darkTheme } from './utils/themes';
 import { WHITE, GRAY_900 } from './utils/constants';
 

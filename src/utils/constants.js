@@ -13,7 +13,7 @@ export const WHITE = '#fff'
 export const BLACK = '#000'
 
 export const BRIGHT_300 ='#e5e5e5'
-export const BIGHT_400 ='#efeded';
+export const BRIGHT_400 ='#efeded';
 export const BRIGHT_500 ='#f7f5f6'
 
 export const GRAY = '#A8A7A8'
