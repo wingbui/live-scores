@@ -7,6 +7,7 @@ export const brightTheme = {
   text: GRAY_900,
   listBg: BRIGHT_400,
   mainBg: GRAY,
+  imgBg: BRIGHT_300,
 };
 
 export const darkTheme = {
@@ -16,4 +17,5 @@ export const darkTheme = {
   text: WHITE,
   listBg: GRAY_900,
   mainBg: BLACK,
+  imgBg: GRAY,
 };

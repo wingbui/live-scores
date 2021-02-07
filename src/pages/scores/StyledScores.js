@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { FIFTH_COLOR, WHITE } from '../../utils/constants';
 
+import { FIFTH_COLOR, WHITE } from '../../utils/constants';
 import { setBackground, setFlex } from '../../utils/styles';
 
 import { detectBgRank } from './utils';
@@ -43,7 +43,7 @@ export const ItemRanking = styled.div`
 
 export const ItemImage = styled.div`
   border-radius: 50%;
-  background: ${props => setBackground(props.picture)} center/cover;
+  background: ${props => setBackground(props.picture, props.theme.imgBg)} center/cover;
   border: 2px solid ${WHITE};
   margin-right: 0.5rem;
   width: 36px;
