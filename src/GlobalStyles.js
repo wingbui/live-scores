@@ -10,6 +10,7 @@ const GlobalStyles = createGlobalStyle`
     body {
         color: ${props => props.theme.text};
         background-color: ${props => props.theme.mainBg};
+        font-family: sans-serif;
     }
 
     li {
